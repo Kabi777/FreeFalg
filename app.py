@@ -33,7 +33,7 @@ class File(db.Model):
 def create_admin_user():
     admin_user = User.query.filter_by(username='admin').first()
     if not admin_user:
-        admin_user = User(username='admin', password= secrets.token_hex(20))
+        admin_user = User(username='admin', password='CyberXT34m12')
         db.session.add(admin_user)
         db.session.commit()
         print("Admin user created.")
